@@ -1,0 +1,13 @@
+name,category,unit,is_consumable,min_stock
+PC Workstation,Komputer,unit,false,0
+Monitor,Komputer,unit,false,0
+Keyboard,Periferal,unit,false,0
+Mouse,Periferal,unit,false,0
+Proyektor,AV,unit,false,0
+AC,Infrastruktur,unit,false,0
+Switch Jaringan,Jaringan,unit,false,0
+Router,Jaringan,unit,false,0
+Access Point,Jaringan,unit,false,0
+Kabel LAN,Periferal,meter,true,50
+Kabel VGA,Periferal,unit,true,5
+Kabel Power,Periferal,unit,true,5

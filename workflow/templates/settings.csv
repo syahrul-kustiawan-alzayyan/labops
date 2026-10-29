@@ -1,0 +1,7 @@
+key,value
+operating_hours_default,"{""start"":""07:30"",""end"":""18:30""}"
+timezone,Asia/Jakarta
+report_cutoff_day,25
+verification_validity_days,90
+sample_verification_per_week,24
+capacity_override_requires_reason,true

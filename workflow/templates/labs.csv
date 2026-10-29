@@ -1,0 +1,7 @@
+canonical_name,aliases,capacity,facilities,capabilities,status
+C-I-01,"Labkom 1;C-I-LAB1",30,"proyektor;AC;switch;whiteboard","umum",aktif
+C-I-02,"Labkom 2",30,"proyektor;AC;switch;whiteboard","umum",aktif
+C-II-01,"Labkom 3;C-II-LAB1",30,"proyektor;AC;switch;whiteboard","umum",aktif
+C-II-02,"Labkom 4",30,"proyektor;AC;switch;whiteboard","umum",aktif
+D-II-01,"Labkom 5",30,"proyektor;AC;switch;whiteboard","umum",aktif
+D-II-02,"Labkom 6",30,"proyektor;AC;switch;router;access point","jaringan;robotika;IoT",aktif

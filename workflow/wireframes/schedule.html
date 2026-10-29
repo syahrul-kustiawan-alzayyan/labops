@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wireframe — Kalender Penjadwalan Lab</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+<div class="max-w-7xl mx-auto p-4 space-y-4">
+  <header class="flex items-center justify-between bg-white rounded-xl shadow p-4">
+    <div class="font-bold">Penjadwalan Penggunaan Lab</div>
+    <div class="flex gap-2">
+      <select class="border rounded px-2 py-1 text-sm"><option>C-I-01</option><option>Semua ruang</option></select>
+      <select class="border rounded px-2 py-1 text-sm"><option>Minggu 5</option></select>
+      <button class="bg-blue-600 text-white px-3 py-1.5 rounded text-sm">+ Tambah Sesi</button>
+      <button class="bg-green-600 text-white px-3 py-1.5 rounded text-sm">Terbitkan Jadwal</button>
+    </div>
+  </header>
+
+  <div class="bg-white rounded-xl shadow p-4">
+    <div class="grid grid-cols-7 text-xs font-semibold text-slate-500 border-b pb-2">
+      <div>Jam</div><div>Senin</div><div>Selasa</div><div>Rabu</div><div>Kamis</div><div>Jumat</div><div>Sabtu</div>
+    </div>
+    <!-- baris jam -->
+    <div class="grid grid-cols-7 text-xs border-b">
+      <div class="py-2 text-slate-500">08.00</div>
+      <div class="bg-blue-100 rounded m-1 p-1">IF101-A<br/>08.00-10.30<br/>Dr. Dede</div>
+      <div class="bg-blue-100 rounded m-1 p-1">SI101-A<br/>08.00-10.30</div>
+      <div class="bg-amber-100 rounded m-1 p-1">Maintenance<br/>08.00-16.00</div>
+      <div></div><div></div><div></div>
+    </div>
+    <div class="grid grid-cols-7 text-xs border-b">
+      <div class="py-2 text-slate-500">10.30</div>
+      <div class="bg-blue-100 rounded m-1 p-1">IF102-A<br/>10.30-13.00<br/>Dr. Sri</div>
+      <div></div><div class="bg-amber-100 rounded m-1 p-1">Maintenance</div>
+      <div></div><div></div><div></div>
+    </div>
+    <div class="grid grid-cols-7 text-xs border-b">
+      <div class="py-2 text-slate-500">13.00</div>
+      <div class="bg-green-100 rounded m-1 p-1">IF103-A<br/>13.00-15.30</div>
+      <div></div><div class="bg-amber-100 rounded m-1 p-1">Maintenance</div>
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <!-- bilah bawah -->
+  <div class="bg-white rounded-xl shadow p-4 flex flex-wrap gap-4 text-sm">
+    <div><span class="font-semibold text-red-600">Konflik:</span> 0</div>
+    <div><span class="font-semibold text-amber-600">Jeda &lt;10 menit:</span> 2 (override tersedia)</div>
+    <div><span class="font-semibold text-slate-600">Ruang-hari kosong:</span> 4</div>
+    <div><span class="font-semibold text-amber-600">Maintenance:</span> 1 blok</div>
+  </div>
+
+  <!-- form sesi (modal preview) -->
+  <div class="bg-white rounded-xl shadow p-4">
+    <h2 class="font-semibold mb-2">Form Sesi (preview)</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+      <div><label class="text-xs text-slate-500">Ruang</label><select class="w-full border rounded px-2 py-1"><option>C-I-01</option></select></div>
+      <div><label class="text-xs text-slate-500">Hari</label><select class="w-full border rounded px-2 py-1"><option>Senin</option></select></div>
+      <div><label class="text-xs text-slate-500">Jam mulai</label><input class="w-full border rounded px-2 py-1" value="08.00" /></div>
+      <div><label class="text-xs text-slate-500">Jam selesai</label><input class="w-full border rounded px-2 py-1" value="10.30" /></div>
+      <div><label class="text-xs text-slate-500">Mata Kuliah</label><select class="w-full border rounded px-2 py-1"><option>IF101 - Algoritma</option></select></div>
+      <div><label class="text-xs text-slate-500">Kelas</label><select class="w-full border rounded px-2 py-1"><option>IF101-A</option></select></div>
+      <div><label class="text-xs text-slate-500">Rentang minggu</label><input class="w-full border rounded px-2 py-1" value="1-16" /></div>
+      <div><label class="text-xs text-slate-500">Jumlah mahasiswa</label><input class="w-full border rounded px-2 py-1" value="30" /></div>
+    </div>
+    <div class="mt-3 text-xs text-amber-600">⚠ Jeda 8 menit dengan sesi sebelumnya — peringatan, dapat di-override dengan alasan.</div>
+    <div class="mt-3 flex gap-2">
+      <button class="bg-blue-600 text-white px-3 py-1.5 rounded text-sm">Simpan Sesi</button>
+      <button class="border px-3 py-1.5 rounded text-sm">Batal</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

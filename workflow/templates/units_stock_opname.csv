@@ -1,0 +1,6 @@
+code,component,brand_model,serial_no,lab,placement,acquired_at,warranty_until,funding_source,ownership,condition
+C-I-01-PC-01,PC Workstation,HP ProDesk 400 G6,SN001,C-I-01,Meja 1,01/08/2022,01/08/2025,Hibah,Lab,Siap Pakai
+C-I-01-PC-02,PC Workstation,HP ProDesk 400 G6,SN002,C-I-01,Meja 2,01/08/2022,01/08/2025,Hibah,Lab,Siap Pakai
+C-I-01-MON-01,Monitor,HP 22 inch,SNM001,C-I-01,Meja 1,01/08/2022,01/08/2025,Hibah,Lab,Siap Pakai
+C-I-01-PROJ-01,Proyektor,Epson EB-X06,SNP001,C-I-01,Langit-langit,01/08/2022,01/08/2025,Hibah,Lab,Siap Pakai
+C-II-02-PC-01,PC Workstation,Lenovo ThinkCentre M720,SN003,C-II-02,Meja 1,15/01/2023,15/01/2026,DIPA,Lab,Siap Pakai

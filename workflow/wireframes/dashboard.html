@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wireframe — Dashboard LabOps ITG</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+<div class="max-w-7xl mx-auto p-4 space-y-4">
+
+  <!-- Top bar -->
+  <header class="flex items-center justify-between bg-white rounded-xl shadow p-4">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold">L</div>
+      <div>
+        <div class="font-bold">LabOps ITG</div>
+        <div class="text-xs text-slate-500">Koordinator Laboratorium</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-2">
+      <input class="border rounded-lg px-3 py-1.5 text-sm w-64" placeholder="Cari unit, tiket, sesi, konten..." />
+      <button class="bg-blue-600 text-white px-3 py-1.5 rounded-lg text-sm">+ Lapor Kerusakan</button>
+    </div>
+  </header>
+
+  <!-- Kesiapan per lab -->
+  <section>
+    <h2 class="font-semibold mb-2">Kesiapan Lab Hari Ini</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+      <div class="bg-white rounded-xl p-3 shadow border-l-4 border-green-500">
+        <div class="text-xs text-slate-500">C-I-01</div>
+        <div class="text-lg font-bold text-green-600">Siap</div>
+        <div class="text-xs">92% workstation · 0 tiket Kritis</div>
+      </div>
+      <div class="bg-white rounded-xl p-3 shadow border-l-4 border-green-500">
+        <div class="text-xs text-slate-500">C-I-02</div>
+        <div class="text-lg font-bold text-green-600">Siap</div>
+        <div class="text-xs">95% · 0 Kritis</div>
+      </div>
+      <div class="bg-white rounded-xl p-3 shadow border-l-4 border-amber-500">
+        <div class="text-xs text-slate-500">C-II-01</div>
+        <div class="text-lg font-bold text-amber-600">Perlu Perhatian</div>
+        <div class="text-xs">85% · 1 tiket Kritis</div>
+      </div>
+      <div class="bg-white rounded-xl p-3 shadow border-l-4 border-green-500">
+        <div class="text-xs text-slate-500">C-II-02</div>
+        <div class="text-lg font-bold text-green-600">Siap</div>
+        <div class="text-xs">91% · 0 Kritis</div>
+      </div>
+      <div class="bg-white rounded-xl p-3 shadow border-l-4 border-red-500">
+        <div class="text-xs text-slate-500">D-II-01</div>
+        <div class="text-lg font-bold text-red-600">Tidak Siap</div>
+        <div class="text-xs">78% · proyektor mati</div>
+      </div>
+      <div class="bg-white rounded-xl p-3 shadow border-l-4 border-green-500">
+        <div class="text-xs text-slate-500">D-II-02</div>
+        <div class="text-lg font-bold text-green-600">Siap</div>
+        <div class="text-xs">96% · 0 Kritis</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tiga kolom -->
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <!-- Tiket terbuka -->
+    <section class="bg-white rounded-xl shadow p-4">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="font-semibold">Tiket Terbuka (5)</h2>
+        <a class="text-sm text-blue-600">Lihat semua</a>
+      </div>
+      <ul class="space-y-2 text-sm">
+        <li class="flex items-center justify-between border-b pb-2">
+          <div><span class="font-mono text-xs text-red-600">RPR-2026-012</span> PC mati · C-II-01
+            <div class="text-xs text-slate-500">PRI-1 · Kritis · menghambat</div>
+          </div>
+          <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded">H-0</span>
+        </li>
+        <li class="flex items-center justify-between border-b pb-2">
+          <div><span class="font-mono text-xs text-amber-600">RPR-2026-011</span> Proyektor · D-II-01
+            <div class="text-xs text-slate-500">PRI-2 · Berat</div>
+          </div>
+          <span class="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded">H-2</span>
+        </li>
+        <li class="flex items-center justify-between">
+          <div><span class="font-mono text-xs text-slate-600">RPR-2026-010</span> Keyboard · C-I-02
+            <div class="text-xs text-slate-500">PRI-4 · Ringan</div>
+          </div>
+          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded">H-5</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Sesi hari ini -->
+    <section class="bg-white rounded-xl shadow p-4">
+      <h2 class="font-semibold mb-2">Sesi Hari Ini (Senin)</h2>
+      <ul class="space-y-2 text-sm">
+        <li class="border-b pb-2">
+          <div class="font-medium">Praktikum Algoritma</div>
+          <div class="text-xs text-slate-500">C-I-01 · 08.00–10.30 · IF101-A · Dr. Dede</div>
+        </li>
+        <li class="border-b pb-2">
+          <div class="font-medium">Praktikum Struktur Data</div>
+          <div class="text-xs text-slate-500">C-I-01 · 10.30–13.00 · IF102-A · Dr. Sri</div>
+        </li>
+        <li>
+          <div class="font-medium">Maintenance & Pengecekan</div>
+          <div class="text-xs text-slate-500">D-II-01 · 08.00–16.00</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Konten jatuh tempo -->
+    <section class="bg-white rounded-xl shadow p-4">
+      <h2 class="font-semibold mb-2">Konten Jatuh Tempo (3)</h2>
+      <ul class="space-y-2 text-sm">
+        <li class="border-b pb-2">
+          <div class="font-medium">Ucapan wisuda Oktober</div>
+          <div class="text-xs text-slate-500">Akun Fakultas · 28/10 · <span class="text-amber-600">Draf</span></div>
+        </li>
+        <li class="border-b pb-2">
+          <div class="font-medium">Sosialisasi jadwal praktikum</div>
+          <div class="text-xs text-slate-500">Akun TI · 29/10 · <span class="text-blue-600">Terjadwal</span></div>
+        </li>
+        <li>
+          <div class="font-medium">Rekrutmen asisten lab</div>
+          <div class="text-xs text-red-600">Akun Fakultas · terlambat 2 hari</div>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Daftar tugas -->
+  <section class="bg-white rounded-xl shadow p-4">
+    <h2 class="font-semibold mb-2">Daftar Tugas (lewat tenggat / perlu aksi)</h2>
+    <table class="w-full text-sm">
+      <thead class="text-slate-500"><tr><th class="text-left py-1">Tugas</th><th class="text-left">Modul</th><th class="text-left">Tenggat</th><th class="text-left">Aksi</th></tr></thead>
+      <tbody>
+        <tr class="border-t"><td>Unit C-II-01-PC-07 diverifikasi 95 hari lalu</td><td>Inventaris</td><td>—</td><td><button class="text-blue-600">Verifikasi</button></td></tr>
+        <tr class="border-t"><td>Tiket RPR-2026-012 (Kritis) belum ditriase</td><td>Kerusakan</td><td>Hari ini</td><td><button class="text-blue-600">Triase</button></td></tr>
+        <tr class="border-t"><td>Konten "Rekrutmen asisten lab" terlambat 2 hari</td><td>Media Sosial</td><td>26/10</td><td><button class="text-blue-600">Posting</button></td></tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+</body>
+</html>

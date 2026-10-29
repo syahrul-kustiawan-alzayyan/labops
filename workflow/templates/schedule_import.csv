@@ -1,0 +1,7 @@
+lab_alias,day,start_time,end_time,week_start,week_end,course_code,class_code,lecturer,student_count,type
+C101,Senin,08.00,10.30,1,16,IF101,IF101-A,Dr. Dede Kurniadi M.Kom,30,praktikum
+C101,Senin,10.30,13.00,1,16,IF102,IF102-A,Dr. Sri Hartati M.T,28,praktikum
+C102,Selasa,08.00,10.30,1,16,SI101,SI101-A,Dr. Sri Hartati M.T,32,praktikum
+C201,Rabu,08.30,11.20,1,16,IF201,IF201-A,Dr. Dede Kurniadi M.Kom,25,praktikum
+C202,Rabu,14.40,17.30,1,16,IF202,IF201-A,Dr. Dede Kurniadi M.Kom,20,praktikum
+D202,Kamis,08.00,16.00,1,16,,,0,maintenance

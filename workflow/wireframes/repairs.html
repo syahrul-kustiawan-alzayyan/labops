@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wireframe — Tiket Kerusakan</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800">
+<div class="max-w-7xl mx-auto p-4 space-y-4">
+
+  <header class="flex items-center justify-between bg-white rounded-xl shadow p-4">
+    <div class="font-bold">Tiket Kerusakan & Perbaikan</div>
+    <button class="bg-red-600 text-white px-3 py-1.5 rounded text-sm">+ Lapor Kerusakan (≤60 detik)</button>
+  </header>
+
+  <div class="bg-white rounded-xl shadow p-4">
+    <div class="flex gap-2 mb-3 text-sm">
+      <select class="border rounded px-2 py-1"><option>Semua status</option></select>
+      <select class="border rounded px-2 py-1"><option>Semua prioritas</option></select>
+      <select class="border rounded px-2 py-1"><option>Termasuk terlambat</option></select>
+    </div>
+    <table class="w-full text-sm">
+      <thead class="text-slate-500 border-b">
+        <tr><th class="text-left py-2">Nomor</th><th class="text-left">Unit</th><th class="text-left">Keparahan</th><th class="text-left">Prioritas</th><th class="text-left">Status</th><th class="text-left">Tenggat</th><th class="text-left">Aksi</th></tr>
+      </thead>
+      <tbody>
+        <tr class="border-b">
+          <td class="py-2 font-mono text-xs">RPR-2026-012</td>
+          <td>C-II-01-PC-07</td>
+          <td><span class="text-red-600 font-semibold">Kritis</span></td>
+          <td><span class="bg-red-100 text-red-700 px-2 py-0.5 rounded text-xs">PRI-1</span></td>
+          <td>Dilaporkan</td>
+          <td class="text-red-600">Hari ini</td>
+          <td><button class="text-blue-600 text-xs">Triase</button></td>
+        </tr>
+        <tr class="border-b">
+          <td class="py-2 font-mono text-xs">RPR-2026-011</td>
+          <td>D-II-01-PROJ-01</td>
+          <td><span class="text-amber-600 font-semibold">Berat</span></td>
+          <td><span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded text-xs">PRI-2</span></td>
+          <td>Dalam Perbaikan</td>
+          <td>3 hari</td>
+          <td><button class="text-blue-600 text-xs">Detail</button></td>
+        </tr>
+        <tr class="border-b">
+          <td class="py-2 font-mono text-xs">RPR-2026-010</td>
+          <td>C-I-02-KB-03</td>
+          <td><span class="text-slate-600">Ringan</span></td>
+          <td><span class="bg-slate-100 text-slate-700 px-2 py-0.5 rounded text-xs">PRI-4</span></td>
+          <td>Terverifikasi</td>
+          <td>—</td>
+          <td><button class="text-blue-600 text-xs">Detail</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Form lapor (modal preview) -->
+  <div class="bg-white rounded-xl shadow p-4">
+    <h2 class="font-semibold mb-2">Form Lapor Kerusakan (preview, ≤60 detik)</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
+      <div><label class="text-xs text-slate-500">Unit</label><input class="w-full border rounded px-2 py-1" value="C-II-01-PC-07" /></div>
+      <div><label class="text-xs text-slate-500">Keparahan</label><select class="w-full border rounded px-2 py-1"><option>Kritis</option></select></div>
+      <div><label class="text-xs text-slate-500">Menghambat praktikum?</label><select class="w-full border rounded px-2 py-1"><option>Ya</option></select></div>
+      <div class="md:col-span-3"><label class="text-xs text-slate-500">Kronologi</label><textarea class="w-full border rounded px-2 py-1" rows="2" placeholder="PC tidak menyala saat kelas masuk..."></textarea></div>
+    </div>
+    <div class="mt-2 text-xs text-slate-600">Prioritas otomatis: <span class="bg-red-100 text-red-700 px-2 py-0.5 rounded">PRI-1</span> · Tenggat respons 1 hari kerja · Tenggat tindak 3 hari kerja</div>
+    <div class="mt-3 flex gap-2">
+      <button class="bg-red-600 text-white px-3 py-1.5 rounded text-sm">Simpan Tiket</button>
+      <button class="border px-3 py-1.5 rounded text-sm">Batal</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

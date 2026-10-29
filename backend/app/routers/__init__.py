@@ -1,0 +1,1 @@
+from app.routers import auth, inventory, repairs, scheduling, social, reports, core  # noqa
